@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تراث البادية الإعلامية | TB Media</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --main-red: #a31d22; /* لون أحمر مقتبس من اللوجو */
+            --dark-red: #5e1114;
+            --neon-glow: #ff4444; /* لون التوهج النيوني */
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            /* إضافة الصورة الخلفية التي أرفقتها (ضع رابطها هنا) */
+            background: linear-gradient(rgba(34, 5, 6, 0.9), rgba(34, 5, 6, 0.9)), 
+                        url('https://e.top4top.io/p_3720r10rm1.png'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* تنسيق اللوجو الدائري المتوهج */
+        .logo-frame {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            background: rgba(163, 29, 34, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            /* تأثير الإضاءة المتوهجة النيونية */
+            box-shadow: 0 0 15px 5px var(--neon-glow), 
+                        inset 0 0 10px 2px var(--neon-glow);
+            border: 2px solid var(--neon-glow);
+        }
+
+        .logo-img {
+            width: 90%; /* حجم اللوجو داخل الإطار */
+            height: 90%;
+            object-fit: contain;
+            /* للتأكد من ظهور اللوجو بوضوح */
+            filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.5));
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            margin: 0 0 10px 0;
+            color: var(--white);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .description {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            margin: 0 0 40px 0;
+            font-weight: 300;
+        }
+
+        /* حاوية الروابط */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            width: 100%;
+        }
+
+        .link-card {
+            background: linear-gradient(145deg, var(--main-red), var(--dark-red));
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 16px 25px;
+            border-radius: 50px; /* زوايا دائرية بالكامل لجعلها مثل تري لينك */
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(163, 29, 34, 0.4);
+            border-color: var(--white);
+        }
+
+        .link-content {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .link-card i {
+            font-size: 1.3rem;
+            width: 25px; /* تحديد عرض للأيقونات لتوحيد المسافات */
+            text-align: center;
+        }
+
+        /* تذييل الصفحة */
+        .footer {
+            margin-top: auto;
+            padding: 30px 0 10px 0;
+            font-size: 0.8rem;
+            opacity: 0.6;
+            width: 100%;
+        }
+
+        /* تنسيق أيقونة جوجل ماب بشكل خاص */
+        .fa-map-marker-alt {
+            color: #4285F4; /* لون أزرق جوجل ماب */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo-frame">
+            <img src="logo.webp" alt="" class="logo-img">
+        </div>
+
+        <h1>تراث البادية الإعلامية</h1>
+        <p class="description"> لتصوير الحفلات والمهرجانات </p>
+
+        <div class="links-container">
+            <a href="https://turathalbadia.com/" class="link-card" target="_blank">
+                <div class="link-content">
+                    <i class="fas fa-globe"></i>
+                    <span>الموقع الرسمي</span>
+                </div>
+                <i class="fas fa-external-link-alt" style="font-size: 0.8rem; opacity: 0.7;"></i>
+            </a>
+
+            <a href="https://www.snapchat.com/add/tbmedia5" class="link-card" target="_blank">
+                <div class="link-content">
+                    <i class="fab fa-snapchat" style="color: #FFFC00;"></i>
+                    <span>سناب شات</span>
+                </div>
+                <i class="fas fa-chevron-left" style="font-size: 0.8rem;"></i>
+            </a>
+
+            <a href="https://maps.app.goo.gl/FUMtzVwAfr3G8wHy5" class="link-card" target="_blank">
+                <div class="link-content">
+                    <i class="fas fa-map-marker-alt"></i> <span>موقعنا على الخريطة</span>
+                </div>
+                <i class="fas fa-chevron-left" style="font-size: 0.8rem;"></i>
+            </a>
+
+            <a href="https://www.tiktok.com/@tb55515" class="link-card" target="_blank">
+                <div class="link-content">
+                    <i class="fab fa-tiktok" style="color: #000000;"></i>
+                    <span>تيك توك</span>
+                </div>
+                <i class="fas fa-chevron-left" style="font-size: 0.8rem;"></i>
+            </a>
+
+            <a href="https://www.instagram.com/tb55515/" class="link-card" target="_blank">
+                <div class="link-content">
+                    <i class="fab fa-instagram" style="color: #ffdddd;"></i>
+                    <span>إنستقرام</span>
+                </div>
+                <i class="fas fa-chevron-left" style="font-size: 0.8rem;"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@TBMedia360" class="link-card" target="_blank">
+                <div class="link-content">
+                    <i class="fab fa-youtube" style="color: #ffffff;"></i>
+                    <span>قناة اليوتيوب</span>
+                </div>                        
+                <i class="fas fa-chevron-left" style="font-size: 0.8rem;"></i>     
+                                   
